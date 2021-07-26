@@ -19,3 +19,6 @@ Route::get('/', function () {
     
 Route::get('image/index', 'ImageController@index');
 Route::post('image/upload', 'ImageController@upload');
+
+
+Route::resource('students', StudentController::class);
